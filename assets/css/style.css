@@ -1276,3 +1276,96 @@ header {
 	width: 100%;
 	display: flex;
 }
+
+/* Modal Fundo Escuro */
+#modal-curriculo {
+	display: none;
+	position: fixed;
+	z-index: 50;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.6); /* Fundo escuro */
+	backdrop-filter: blur(4px); /* Efeito vidro fosco */
+	justify-content: center;
+	align-items: center;
+	transition: opacity 0.3s ease;
+}
+
+/* Modal Ativo */
+#modal-curriculo.active {
+	display: flex;
+	animation: fadeIn 0.3s ease forwards;
+}
+
+/* Conteúdo do Modal */
+#modal-content {
+	background: white;
+	border-radius: 12px;
+	padding: 30px;
+	width: 90%;
+	max-width: 500px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+/* Quando Modal estiver Ativo */
+#modal-curriculo.active #modal-content {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+/* Botão de Fechar */
+#modal-close {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #2b4c99;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+#modal-close:hover {
+	color: #0079c7;
+}
+
+/* Título */
+#modal-nome {
+	font-size: 24px;
+	font-weight: bold;
+	color: #2b4c99;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+/* Profissão e CRO */
+#modal-profissao,
+#modal-cro {
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+}
+
+/* Lista de Currículo */
+#modal-curriculo-list {
+	margin-top: 20px;
+	list-style: disc;
+	padding-left: 20px;
+	color: #333;
+	font-size: 14px;
+}
+
+/* Animação Fade */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

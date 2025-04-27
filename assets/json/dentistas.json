@@ -4,6 +4,13 @@
 		"profissao": "Cirurgião-Dentista",
 		"cro": "CRO-SP 74918",
 		"imagem": "assets/img/dr-clayton.jpg",
+		"curriculo": [
+			"Graduado pela PUC-Campinas em 2001",
+			"Especialista em Endodontia – ACDC em 2005",
+			"Pós-graduado em prótese fixa com ênfase em estética – ACDC em 2007",
+			"Proprietário da clínica, atuando em consultório particular desde 2001",
+			"Atual vice-presidente da ACDC"
+		],
 		"redes": {
 			"facebook": "https://facebook.com/drclayton",
 			"instagram": "https://instagram.com/drclayton",
@@ -15,6 +22,15 @@
 		"profissao": "Ortodontista",
 		"cro": "CRO-SP 74928",
 		"imagem": "assets/img/dr-fabricio.jpg",
+		"curriculo": [
+			"Mestre em Implantodontia",
+			"Especialista em Prótese Dentária",
+			"Especialista em Endodontia",
+			"Professor de Cursos de Especialização em Implantodontia na faculdade São Leopoldo Mandic",
+			"Professor  da  Residencia  Implantologia  Avanzada  na  faculdade  São Leopoldo Mandic",
+			"Membro credenciado: Fibrina Rica em Plaquetas e Leucócitos (L-PRF), Advanced PRF (A PRF) e Injectable PRF (I PRF)",
+			"Membro credenciado: Digital Smile Design (DSD)"
+		],
 		"redes": {
 			"instagram": "https://instagram.com/drfabricio"
 		}
@@ -24,6 +40,12 @@
 		"profissao": "Implantodontista",
 		"cro": "CRO-SP 76446",
 		"imagem": "assets/img/dra-elena.jpg",
+		"curriculo": [
+			"Especialista em Periodontia",
+			"Promoção de saúde",
+			"Membro da Associação Brasileira de Halitose",
+			"MBA em Gestão e Saúde"
+		],
 		"redes": {
 			"facebook": "https://facebook.com/draelena",
 			"linkedin": "https://linkedin.com/in/draelena"
@@ -34,6 +56,15 @@
 		"profissao": "Endodontista",
 		"cro": "CRO-SP 93337",
 		"imagem": "assets/img/dra-alline.jpg",
+		"curriculo": [
+			"Graduada pela faculdade São Leopoldo Mandic Campinas",
+			"Mestre em odontopediatria pela faculdade São Leopoldo Mandic Campinas",
+			"Aperfeiçoamento em sedação inalatória na São Leopoldo Mandic Campinas",
+			"Pós graduada em odontologia para bebês pela Universidade Estadual de Londrina",
+			"Ministra aulas nos cursos de especialização de odontopediatria da ACDC (Associação dos Cirurgiões Dentistas de Campinas)",
+			"Ministra aulas nos cursos de mestrado e especialização de odontopediatria na faculdade São Leopoldo Mandic Campinas",
+			"Participou do banco de dentes humanos do Centro de Pesquisas Odontológicas da faculdade São Leopoldo Mandic Campinas"
+		],
 		"redes": {}
 	},
 	{
@@ -41,6 +72,11 @@
 		"profissao": "Periodontista",
 		"cro": "CRO-SP 147254",
 		"imagem": "assets/img/dra-michelle.jpg",
+		"curriculo": [
+			"Graduada pela Faculdade São Leopoldo Mandic Campinas em 2021",
+			"Atualmente é mestranda em Clinica odontológica integrada",
+			"Está cursando a especialização de pacientes especiais na Faculdade São Leopoldo Madic"
+		],
 		"redes": {
 			"instagram": "https://instagram.com/dramichelle",
 			"facebook": "https://facebook.com/dramichelle"
