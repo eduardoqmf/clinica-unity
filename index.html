@@ -9,6 +9,10 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<title>Clínica Unity - Sua Saúde Odontológica</title>
 		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com"
 		/>
@@ -24,6 +28,10 @@
 		<link
 			rel="stylesheet"
 			href="assets/css/style.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="assets/css/swiper-custom.css"
 		/>
 	</head>
 
@@ -60,30 +68,121 @@
 			<!-- HOME -->
 			<section
 				id="home"
-				class="min-h-screen flex flex-col items-center justify-center bg-white text-center px-4"
+				class="flex flex-col items-center justify-center text-center overflow-hidden bg-cover bg-center px-4"
+				style="
+					background-image: url('assets/img/bg-sorriso.jpg');
+					height: calc(100vh - 100px);
+				"
 			>
-				<h1 class="text-4xl md:text-5xl font-bold text-[#2b4c99] mb-6">
-					Bem-vindo à Clínica Unity
-				</h1>
-				<p class="text-gray-600 text-lg max-w-2xl">
-					Cuidando do seu sorriso com excelência e dedicação.
-				</p>
+				<div
+					class="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg max-w-3xl"
+				>
+					<h1
+						class="text-4xl md:text-5xl font-bold text-[#2b4c99] mb-4"
+					>
+						Clínica Unity
+					</h1>
+					<h2 class="text-gray-700 text-xl md:text-2xl mb-6">
+						Cuidando do seu sorriso com excelência e dedicação.
+					</h2>
+					<a
+						href="#contato"
+						class="inline-block bg-[#39aae1] hover:bg-[#0079c7] text-white font-semibold py-3 px-8 rounded-full text-lg transition-all"
+					>
+						Agende sua Consulta
+					</a>
+				</div>
+
+				<div class="absolute bottom-0 w-full px-4 pb-8">
+					<div
+						class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto"
+					>
+						<!-- Card 1: Sobre a Clínica -->
+						<div
+							class="bg-white bg-opacity-90 p-6 rounded-lg shadow-md"
+						>
+							<h3
+								class="text-xl font-semibold text-[#2b4c99] mb-3"
+							>
+								Sobre a Clínica
+							</h3>
+							<p class="text-gray-600 text-sm">
+								Na Clínica Unity, nossos tratamentos são guiados
+								pela ética, qualidade e respeito. Nossa equipe é
+								especializada em transformar sorrisos com
+								excelência e cuidado.
+							</p>
+						</div>
+
+						<!-- Card 2: Filosofia e Equipe -->
+						<div
+							class="bg-white bg-opacity-90 p-6 rounded-lg shadow-md"
+						>
+							<h3
+								class="text-xl font-semibold text-[#0079c7] mb-3"
+							>
+								Nossa Filosofia
+							</h3>
+							<p class="text-gray-600 text-sm">
+								Ética, formação de excelência e respeito aos
+								nossos pacientes. Trabalhamos com profissionais
+								de referência no mercado odontológico.
+							</p>
+						</div>
+
+						<!-- Card 3: Horários de Atendimento -->
+						<div
+							class="bg-white bg-opacity-90 p-6 rounded-lg shadow-md"
+						>
+							<h3
+								class="text-xl font-semibold text-[#39aae1] mb-3"
+							>
+								Horários
+							</h3>
+							<div class="text-gray-600 text-sm space-y-2">
+								<p>
+									<strong>Segunda a Sexta:</strong> 8:00 -
+									18:00
+								</p>
+								<p><strong>Sábado:</strong> 8:00 - 12:00</p>
+								<p><strong>Domingo:</strong> Fechado</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<!-- PROFISSIONAIS -->
 			<section
 				id="profissionais"
-				class="py-20 bg-[#f9fafb] text-center px-4"
+				class="py-16 bg-gray-100"
 			>
-				<h2
-					class="text-3xl md:text-4xl font-semibold text-[#0079c7] mb-10"
-				>
-					Nossa Equipe
-				</h2>
-				<p class="text-gray-600 text-lg max-w-3xl mx-auto">
-					Conheça os profissionais altamente qualificados que fazem
-					parte da nossa equipe.
-				</p>
+				<div class="container mx-auto">
+					<h2
+						class="text-3xl font-bold text-center text-[#2b4c99] mb-12"
+					>
+						Nossa Equipe
+					</h2>
+
+					<div class="relative">
+						<!-- Swiper -->
+						<div class="swiper profissionais-swiper">
+							<div
+								class="swiper-wrapper"
+								id="dentistas-wrapper"
+							>
+								<!-- Slides serão adicionados via profissionais.js -->
+							</div>
+
+							<!-- Botões de navegação -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+
+						<!-- Paginação (fora do swiper principal) -->
+						<div class="swiper-pagination mt-8"></div>
+					</div>
+				</div>
 			</section>
 
 			<!-- INFORMAÇÕES AOS PACIENTES -->
@@ -1402,5 +1501,7 @@
 			<!-- Ícone do WhatsApp (pode ser só o texto por enquanto, depois adicionamos SVG se quiser) -->
 			WhatsApp
 		</a>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="assets/js/profissionais.js"></script>
 	</body>
 </html>

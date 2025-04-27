@@ -1,0 +1,49 @@
+[
+	{
+		"nome": "Dr. Clayton Luis da Silva",
+		"profissao": "Cirurgião-Dentista",
+		"cro": "CRO-SP 74918",
+		"imagem": "assets/img/dr-clayton.jpg",
+		"redes": {
+			"facebook": "https://facebook.com/drclayton",
+			"instagram": "https://instagram.com/drclayton",
+			"linkedin": "https://linkedin.com/in/drclayton"
+		}
+	},
+	{
+		"nome": "Dr. Fabrício Capato de Brito",
+		"profissao": "Ortodontista",
+		"cro": "CRO-SP 74928",
+		"imagem": "assets/img/dr-fabricio.jpg",
+		"redes": {
+			"instagram": "https://instagram.com/drfabricio"
+		}
+	},
+	{
+		"nome": "Dra. Elena Portes Teixeira Will",
+		"profissao": "Implantodontista",
+		"cro": "CRO-SP 76446",
+		"imagem": "assets/img/dra-elena.jpg",
+		"redes": {
+			"facebook": "https://facebook.com/draelena",
+			"linkedin": "https://linkedin.com/in/draelena"
+		}
+	},
+	{
+		"nome": "Dra. Alline Fray Falleiros",
+		"profissao": "Endodontista",
+		"cro": "CRO-SP 93337",
+		"imagem": "assets/img/dra-alline.jpg",
+		"redes": {}
+	},
+	{
+		"nome": "Dra. Michelle Bueno Sobral",
+		"profissao": "Periodontista",
+		"cro": "CRO-SP 147254",
+		"imagem": "assets/img/dra-michelle.jpg",
+		"redes": {
+			"instagram": "https://instagram.com/dramichelle",
+			"facebook": "https://facebook.com/dramichelle"
+		}
+	}
+]
