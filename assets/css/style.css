@@ -1369,3 +1369,12 @@ header {
 		opacity: 1;
 	}
 }
+
+#galeria-wrapper a img {
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+#galeria-wrapper a:hover img {
+	transform: scale(1.05);
+	opacity: 0.9;
+}

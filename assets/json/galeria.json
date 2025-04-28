@@ -1,0 +1,19 @@
+[
+	{
+		"imagem": "assets/img/galeria/foto01.jpg",
+		"descricao": "Recepção da clínica"
+	},
+	{
+		"imagem": "assets/img/galeria/foto02.jpg",
+		"descricao": "Sala de atendimento"
+	},
+	{
+		"imagem": "assets/img/galeria/foto03.jpg",
+		"descricao": "Escritório Consultório 1"
+	},
+	{ "imagem": "assets/img/galeria/foto04.jpg", "descricao": "Consultório 1" },
+	{ "imagem": "assets/img/galeria/foto05.jpg", "descricao": "Consultório 2" },
+	{ "imagem": "assets/img/galeria/foto06.jpg", "descricao": "Consultório 3" },
+	{ "imagem": "assets/img/galeria/foto07.jpg", "descricao": "Consultório 4" },
+	{ "imagem": "assets/img/galeria/foto08.jpg", "descricao": "Consultório 5" }
+]
