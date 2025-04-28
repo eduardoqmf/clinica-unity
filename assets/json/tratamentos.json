@@ -1,0 +1,62 @@
+[
+	{
+		"nome": "Ortodontia",
+		"descricao": "Corrige a posição dos dentes e ossos maxilares, melhorando a estética, facilitando a higienização e prevenindo problemas como dores de cabeça e ATM."
+	},
+	{
+		"nome": "Lentes de Contato Dental",
+		"descricao": "Facetas ultrafinas de porcelana que corrigem manchas, desgastes e espaços entre dentes, promovendo um sorriso mais estético e natural."
+	},
+	{
+		"nome": "Clareamento Dental a Laser",
+		"descricao": "Tratamento que elimina manchas e pigmentações nos dentes através da ação do laser, reduzindo a sensibilidade e reforçando a estrutura dental."
+	},
+	{
+		"nome": "Exodontia",
+		"descricao": "Extração de dentes de forma segura e minimamente invasiva, realizada apenas quando outros tratamentos conservadores não são possíveis."
+	},
+	{
+		"nome": "Endodontia",
+		"descricao": "Conhecido como tratamento de canal, visa tratar infecções e preservar dentes comprometidos por cáries, traumas ou outras patologias."
+	},
+	{
+		"nome": "Implante Dentário",
+		"descricao": "Substituição de dentes perdidos através da instalação de pinos de titânio no osso, recuperando função mastigatória e estética."
+	},
+	{
+		"nome": "Prótese Dentária",
+		"descricao": "Reposição de dentes perdidos, podendo ser fixa ou removível, total ou parcial, adaptada às necessidades individuais do paciente."
+	},
+	{
+		"nome": "Dentística Restauradora",
+		"descricao": "Restaurações estéticas em dentes comprometidos, utilizando resinas de alta performance para resultados naturais e duradouros."
+	},
+	{
+		"nome": "Cirurgia Odontológica",
+		"descricao": "Procedimentos como remoção de dentes do siso ou fraturados, realizados de forma cuidadosa para minimizar desconfortos."
+	},
+	{
+		"nome": "Clínica Geral Odontológica",
+		"descricao": "Diagnóstico e tratamento de doenças bucais, com exames clínicos e radiográficos para um plano de tratamento eficaz."
+	},
+	{
+		"nome": "Estética Odontológica",
+		"descricao": "Melhorias estéticas como facetas, restaurações invisíveis, coroas metalfree e clareamentos para um sorriso mais harmônico."
+	},
+	{
+		"nome": "Implantodontia",
+		"descricao": "Procedimento moderno para fixação de implantes dentários que substituem raízes naturais perdidas."
+	},
+	{
+		"nome": "Laserterapia",
+		"descricao": "Tratamento auxiliar no alívio de dores, redução de edemas, aftas e estímulo à regeneração tecidual através do uso terapêutico do laser."
+	},
+	{
+		"nome": "Periodontia",
+		"descricao": "Tratamento de doenças da gengiva e suporte ósseo, prevenindo problemas como sangramentos, halitose e perdas dentárias."
+	},
+	{
+		"nome": "Prevenção",
+		"descricao": "Programa de manutenção da saúde bucal através de limpezas periódicas, orientação de higiene e controle de cáries e doenças gengivais."
+	}
+]

@@ -1378,3 +1378,53 @@ header {
 	transform: scale(1.05);
 	opacity: 0.9;
 }
+/* Seção de Tratamentos */
+.tratamento-card {
+	background-color: #f8f9fa;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.tratamento-card:hover {
+	background-color: #e6f0ff;
+	box-shadow: 0 4px 12px rgba(43, 76, 153, 0.2);
+}
+
+.tratamento-titulo {
+	font-size: 20px;
+	font-weight: 700;
+	color: #2b4c99;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tratamento-titulo::after {
+	content: "+";
+	font-size: 24px;
+	font-weight: bold;
+	transition: transform 0.3s ease;
+}
+
+.tratamento-card.open .tratamento-titulo::after {
+	transform: rotate(45deg); /* vira um X */
+}
+
+.tratamento-conteudo {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.4s ease, padding 0.4s ease;
+	font-size: 15px;
+	color: #555;
+	margin-top: 10px;
+}
+
+.tratamento-card.open .tratamento-conteudo {
+	max-height: 1000px; /* suficiente para caber bastante texto */
+	padding-top: 10px;
+}
