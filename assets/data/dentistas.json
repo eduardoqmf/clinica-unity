@@ -3,7 +3,7 @@
 		"nome": "Dr. Clayton Luis da Silva",
 		"profissao": "Cirurgião-Dentista",
 		"cro": "CRO-SP 74918",
-		"imagem": "assets/img/dr-clayton.jpg",
+		"imagem": "assets/img/dentistas/dr-clayton.jpg",
 		"curriculo": [
 			"Graduado pela PUC-Campinas em 2001",
 			"Especialista em Endodontia – ACDC em 2005",
@@ -21,7 +21,7 @@
 		"nome": "Dr. Fabrício Capato de Brito",
 		"profissao": "Ortodontista",
 		"cro": "CRO-SP 74928",
-		"imagem": "assets/img/dr-fabricio.jpg",
+		"imagem": "assets/img/dentistas/dr-fabricio.jpg",
 		"curriculo": [
 			"Mestre em Implantodontia",
 			"Especialista em Prótese Dentária",
@@ -39,7 +39,7 @@
 		"nome": "Dra. Elena Portes Teixeira Will",
 		"profissao": "Implantodontista",
 		"cro": "CRO-SP 76446",
-		"imagem": "assets/img/dra-elena.jpg",
+		"imagem": "assets/img/dentistas/dra-elena.jpg",
 		"curriculo": [
 			"Especialista em Periodontia",
 			"Promoção de saúde",
@@ -55,7 +55,7 @@
 		"nome": "Dra. Alline Fray Falleiros",
 		"profissao": "Endodontista",
 		"cro": "CRO-SP 93337",
-		"imagem": "assets/img/dra-alline.jpg",
+		"imagem": "assets/img/dentistas/dra-alline.jpg",
 		"curriculo": [
 			"Graduada pela faculdade São Leopoldo Mandic Campinas",
 			"Mestre em odontopediatria pela faculdade São Leopoldo Mandic Campinas",
@@ -71,7 +71,7 @@
 		"nome": "Dra. Michelle Bueno Sobral",
 		"profissao": "Periodontista",
 		"cro": "CRO-SP 147254",
-		"imagem": "assets/img/dra-michelle.jpg",
+		"imagem": "assets/img/dentistas/dra-michelle.jpg",
 		"curriculo": [
 			"Graduada pela Faculdade São Leopoldo Mandic Campinas em 2021",
 			"Atualmente é mestranda em Clinica odontológica integrada",

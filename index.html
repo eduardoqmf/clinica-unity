@@ -6,12 +6,9 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<script src="https://cdn.tailwindcss.com"></script>
 		<title>Clínica Unity - Sua Saúde Odontológica</title>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-		/>
+
+		<!-- Fontes -->
 		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com"
@@ -22,12 +19,20 @@
 			crossorigin
 		/>
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
 			rel="stylesheet"
 		/>
+
+		<!-- Swiper para carrossel -->
 		<link
 			rel="stylesheet"
-			href="assets/css/style.css"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<!-- Estilos personalizados -->
+		<link
+			rel="stylesheet"
+			href="assets/css/main.css"
 		/>
 		<link
 			rel="stylesheet"
@@ -37,31 +42,39 @@
 
 	<body>
 		<header class="header">
-			<div class="header-container">
+			<div class="container header-container">
+				<!-- Logo -->
 				<div class="logo">
-					<a href="#home">
+					<a
+						href="#home"
+						title="Página Inicial - Clínica Unity"
+					>
 						<img
-							src="assets/img/logo.png"
-							alt="Clínica Unity"
+							src="assets/img/icones/logo.png"
+							alt="Logo da Clínica Unity"
+							class="logoimg"
 						/>
 					</a>
 				</div>
-				<div class="menu">
+
+				<!-- Menu de navegação -->
+				<nav
+					class="menu"
+					aria-label="Menu principal"
+				>
 					<img
 						class="menuopener"
-						src="assets/img/menu.png"
-						alt="Menu"
+						src="assets/img/icones/menu.png"
+						alt="Abrir Menu"
 					/>
-					<nav>
-						<ul>
-							<li class="active"><a href="#home">Home</a></li>
-							<li><a href="#profissionais">Profissionais</a></li>
-							<li><a href="#galeria">Galeria de Fotos</a></li>
-							<li><a href="#tratamentos">Tratamentos</a></li>
-							<li><a href="#contato">Contato</a></li>
-						</ul>
-					</nav>
-				</div>
+					<ul>
+						<li class="active"><a href="#home">Home</a></li>
+						<li><a href="#profissionais">Profissionais</a></li>
+						<li><a href="#galeria">Galeria de Fotos</a></li>
+						<li><a href="#tratamentos">Tratamentos</a></li>
+						<li><a href="#contato">Contato</a></li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 
@@ -69,85 +82,73 @@
 			<!-- HOME -->
 			<section
 				id="home"
-				class="flex flex-col items-center justify-center text-center overflow-hidden bg-cover bg-center px-4"
+				class="home-section"
 				style="
-					background-image: url('assets/img/bg-sorriso.jpg');
-					height: calc(100vh - 100px);
+					background-image: url('assets/img/backgrounds/bg-sorriso.jpg');
 				"
 			>
-				<div
-					class="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg max-w-3xl"
-				>
-					<h1
-						class="text-4xl md:text-5xl font-bold text-[#2b4c99] mb-4"
-					>
-						Clínica Unity
-					</h1>
-					<h2 class="text-gray-700 text-xl md:text-2xl mb-6">
-						Cuidando do seu sorriso com excelência e dedicação.
-					</h2>
-					<a
-						href="#contato"
-						class="inline-block bg-[#39aae1] hover:bg-[#0079c7] text-white font-semibold py-3 px-8 rounded-full text-lg transition-all"
-					>
-						Agende sua Consulta
-					</a>
+				<div class="home-content container">
+					<h1>Clínica Unity</h1>
+					<h2>Cuidando do seu sorriso com excelência e dedicação.</h2>
 				</div>
 
-				<div class="absolute bottom-0 w-full px-4 pb-8">
-					<div
-						class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto"
-					>
-						<!-- Card 1: Sobre a Clínica -->
-						<div
-							class="bg-white bg-opacity-90 p-6 rounded-lg shadow-md"
-						>
-							<h3
-								class="text-xl font-semibold text-[#2b4c99] mb-3"
-							>
-								Sobre a Clínica
-							</h3>
-							<p class="text-gray-600 text-sm">
+				<div class="home-cards container">
+					<!-- Card 1: Sobre a Clínica -->
+					<div class="card-home">
+						<div class="card-home-title">
+							<h3>Sobre a Clínica</h3>
+						</div>
+						<div class="card-home-content">
+							<p>
 								Na Clínica Unity, nossos tratamentos são guiados
 								pela ética, qualidade e respeito. Nossa equipe é
 								especializada em transformar sorrisos com
 								excelência e cuidado.
 							</p>
 						</div>
+					</div>
 
-						<!-- Card 2: Filosofia e Equipe -->
-						<div
-							class="bg-white bg-opacity-90 p-6 rounded-lg shadow-md"
-						>
-							<h3
-								class="text-xl font-semibold text-[#0079c7] mb-3"
-							>
-								Nossa Filosofia
-							</h3>
-							<p class="text-gray-600 text-sm">
+					<!-- Card 2: Nossa Filosofia -->
+					<div class="card-home">
+						<div class="card-home-title">
+							<h3>Nossa Filosofia</h3>
+						</div>
+						<div class="card-home-content">
+							<p>
 								Ética, formação de excelência e respeito aos
 								nossos pacientes. Trabalhamos com profissionais
 								de referência no mercado odontológico.
 							</p>
 						</div>
+					</div>
 
-						<!-- Card 3: Horários de Atendimento -->
-						<div
-							class="bg-white bg-opacity-90 p-6 rounded-lg shadow-md"
-						>
-							<h3
-								class="text-xl font-semibold text-[#39aae1] mb-3"
-							>
-								Horários
-							</h3>
-							<div class="text-gray-600 text-sm space-y-2">
-								<p>
-									<strong>Segunda a Sexta:</strong> 8:00 -
-									18:00
-								</p>
-								<p><strong>Sábado:</strong> 8:00 - 12:00</p>
-								<p><strong>Domingo:</strong> Fechado</p>
+					<!-- Card 3: Horários -->
+					<div class="card-home">
+						<div class="card-home-title">
+							<h3>Horários</h3>
+						</div>
+						<div class="card-home-content">
+							<div class="hours">
+								<div class="semana">
+									<p><strong>Segunda a Sexta:</strong></p>
+									<p>08:00 - 18:00</p>
+								</div>
+								<div class="sabado">
+									<p><strong>Sábado:</strong></p>
+									<p>08:00 - 12:00</p>
+								</div>
+								<div class="domingo">
+									<p><strong>Domingo:</strong></p>
+									<p>Fechado</p>
+								</div>
 							</div>
+						</div>
+						<div class="card-home-button">
+							<a
+								href="#contato"
+								class="button"
+								>Agende sua Consulta</a
+							>
 						</div>
 					</div>
 				</div>
@@ -156,53 +157,41 @@
 			<!-- PROFISSIONAIS -->
 			<section
 				id="profissionais"
-				class="py-16 bg-gray-100"
+				class="section-default bg-gray"
 			>
-				<div class="container mx-auto">
-					<h2
-						class="text-3xl font-bold text-center text-[#2b4c99] mb-12"
-					>
-						Nossa Equipe
-					</h2>
+				<div class="container">
+					<h2 class="section-title">Nossa Equipe</h2>
 
-					<div class="relative">
-						<!-- Swiper -->
-						<div class="swiper profissionais-swiper">
-							<div
-								class="swiper-wrapper"
-								id="dentistas-wrapper"
-							>
-								<!-- Slides serão adicionados via profissionais.js -->
-							</div>
-
-							<!-- Botões de navegação -->
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
+					<div class="swiper profissionais-swiper">
+						<div
+							class="swiper-wrapper"
+							id="dentistas-wrapper"
+						>
+							<!-- Slides de dentistas serão inseridos via profissionais.js -->
 						</div>
 
-						<!-- Paginação (fora do swiper principal) -->
-						<div class="swiper-pagination mt-8"></div>
+						<!-- Botões de navegação -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
 					</div>
+
+					<div class="swiper-pagination"></div>
 				</div>
 			</section>
 
 			<!-- GALERIA DE FOTOS -->
 			<section
 				id="galeria"
-				class="py-16 bg-gray-100"
+				class="section-default bg-gray"
 			>
-				<div class="container mx-auto">
-					<h2
-						class="text-3xl font-bold text-center text-[#2b4c99] mb-12"
-					>
-						Galeria de Fotos
-					</h2>
+				<div class="container">
+					<h2 class="section-title">Galeria de Fotos</h2>
 
 					<div
 						id="galeria-wrapper"
-						class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4"
+						class="gallery-grid"
 					>
-						<!-- Fotos serão carregadas via JS -->
+						<!-- As imagens serão carregadas via galeria.js -->
 					</div>
 				</div>
 			</section>
@@ -210,20 +199,16 @@
 			<!-- TRATAMENTOS -->
 			<section
 				id="tratamentos"
-				class="py-16 bg-white"
+				class="section-default bg-white"
 			>
-				<div class="container mx-auto px-4">
-					<h2
-						class="text-3xl font-bold text-center text-[#2b4c99] mb-12"
-					>
-						Tratamentos
-					</h2>
+				<div class="container">
+					<h2 class="section-title">Tratamentos</h2>
 
 					<div
 						id="tratamentos-wrapper"
-						class="space-y-6"
+						class="tratamentos-list"
 					>
-						<!-- Tratamentos serão carregados via tratamentos.js -->
+						<!-- Tratamentos serão carregados dinamicamente via tratamentos.js -->
 					</div>
 				</div>
 			</section>
@@ -231,29 +216,20 @@
 			<!-- LOCALIZAÇÃO E CONTATO -->
 			<section
 				id="contato"
-				class="py-16 bg-white"
+				class="section-default bg-light"
 			>
-				<div class="container mx-auto px-4">
-					<!-- Título da Seção -->
-					<h2
-						class="text-3xl font-bold text-center text-[#2b4c99] mb-12"
-					>
-						Localização e Contato
-					</h2>
+				<div class="container">
+					<h2 class="section-title">Localização e Contato</h2>
 
-					<div
-						class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
-					>
+					<div class="contato-grid">
 						<!-- Mapa -->
-						<div class="w-full h-80 md:h-[400px] relative">
-							<!-- Texto oculto para SEO -->
+						<div class="contato-mapa">
 							<p class="sr-only">
 								Clínica Unity, localizada na Rua Exemplo, 123 -
 								Chácara da Barra, Campinas - SP. Especializada
 								em odontologia, ortodontia, estética dental,
 								implantes, clareamento e endodontia.
 							</p>
-
 							<iframe
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.6735018580457!2d-47.04345082393372!3d-22.888516437219756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cf5e79147389%3A0x893804d5c406164f!2sR.%20Mogi%20Gua%C3%A7u%2C%20403%20-%20Ch%C3%A1cara%20da%20Barra%2C%20Campinas%20-%20SP%2C%2013090-605!5e0!3m2!1spt-BR!2sbr!4v1745873120551!5m2!1spt-BR!2sbr"
 								width="100%"
@@ -262,57 +238,45 @@
 								allowfullscreen=""
 								loading="lazy"
 								referrerpolicy="no-referrer-when-downgrade"
-								class="rounded-lg shadow-md"
+								class="mapa-iframe"
 							></iframe>
 						</div>
 
 						<!-- Informações de contato -->
-						<div class="text-center md:text-left space-y-6">
-							<h2 class="text-3xl font-bold text-[#2b4c99]">
-								Clínica Unity
-							</h2>
+						<div class="contato-info">
+							<h3 class="contato-clinica">Clínica Unity</h3>
 
-							<div
-								class="flex items-center gap-4 justify-center md:justify-start"
-							>
+							<div class="contato-item">
 								<div class="icone-contato">
 									<img
-										src="assets/img/localizacao.png"
+										src="assets/img/icones/localizacao.png"
 										alt="Localização"
 									/>
 								</div>
-								<p class="text-gray-700 text-sm">
+								<p>
 									Rua Exemplo, 123 - Chácara da Barra,
 									Campinas - SP
 								</p>
 							</div>
 
-							<div
-								class="flex items-center gap-4 justify-center md:justify-start"
-							>
+							<div class="contato-item">
 								<div class="icone-contato">
 									<img
-										src="assets/img/telefone.png"
+										src="assets/img/icones/telefone.png"
 										alt="Telefone"
 									/>
 								</div>
-								<p class="text-gray-700 text-sm">
-									(19) 1234-5678
-								</p>
+								<p>(19) 1234-5678</p>
 							</div>
 
-							<div
-								class="flex items-center gap-4 justify-center md:justify-start"
-							>
+							<div class="contato-item">
 								<div class="icone-contato">
 									<img
-										src="assets/img/whatsapp.png"
+										src="assets/img/icones/whatsapp.png"
 										alt="WhatsApp"
 									/>
 								</div>
-								<p class="text-gray-700 text-sm">
-									(19) 98765-4321
-								</p>
+								<p>(19) 98765-4321</p>
 							</div>
 						</div>
 					</div>
@@ -320,96 +284,96 @@
 			</section>
 		</main>
 
-		<footer>
-			<section class="default dark">
-				<div class="section_body">
-					<div class="section-footer">
-						<div class="section-footer--item">
-							<div class="section-footer--item-social-area">
-								<!-- Redes Sociais -->
-								<div class="section-footer--item-icons">
-									<a
-										href="#"
-										target="_blank"
-									>
-										<img
-											src="assets/img/facebook.png"
-											alt="Facebook"
-										/>
-									</a>
-									<a
-										href="#"
-										target="_blank"
-									>
-										<img
-											src="assets/img/instagram.png"
-											alt="Instagram"
-										/>
-									</a>
-									<a
-										href="#"
-										target="_blank"
-									>
-										<img
-											src="assets/img/linkedin.png"
-											alt="LinkedIn"
-										/>
-									</a>
-								</div>
-
-								<!-- Copyright -->
-								<div class="section-footer--item-copy">
-									<p>
-										&copy; 2025 Clínica Unity. Todos os
-										direitos reservados.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="container footer-container">
+				<div class="footer-social">
+					<a
+						href="#"
+						target="_blank"
+						class="footer-icon"
+					>
+						<img
+							src="assets/img/icones/facebook.png"
+							alt="Facebook"
+						/>
+					</a>
+					<a
+						href="#"
+						target="_blank"
+						class="footer-icon"
+					>
+						<img
+							src="assets/img/icones/instagram.png"
+							alt="Instagram"
+						/>
+					</a>
+					<a
+						href="#"
+						target="_blank"
+						class="footer-icon"
+					>
+						<img
+							src="assets/img/icones/linkedin.png"
+							alt="LinkedIn"
+						/>
+					</a>
 				</div>
-			</section>
+
+				<div class="footer-copy">
+					&copy; 2025 Clínica Unity. Todos os direitos reservados.
+				</div>
+			</div>
 		</footer>
 
 		<!-- BOTÃO WHATSAPP FLUTUANTE -->
 		<a
-			href="https://api.whatsapp.com/send?phone=SEUNUMERO&text=Olá%2C%20gostaria%20de%20informações."
+			href="https://api.whatsapp.com/send?phone=19993936782&text=Olá%2C%20gostaria%20de%20informações."
 			target="_blank"
-			class="fixed bottom-4 right-4 bg-[#39aae1] hover:bg-[#0079c7] text-white p-4 rounded-full shadow-lg transition-all"
+			class="whatsapp-button"
+			aria-label="Contato via WhatsApp"
 		>
-			<!-- Ícone do WhatsApp (pode ser só o texto por enquanto, depois adicionamos SVG se quiser) -->
-			WhatsApp
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="currentColor"
+				width="32"
+				height="32"
+				viewBox="0 0 24 24"
+			>
+				<path
+					d="M20.5 3.5c-4.7-4.7-12.3-4.7-17 0-4.7 4.7-4.7 12.3 0 17l1.8-6.2c.2-.7 1-.8 1.4-.3l1.5 1.5c.3.3.7.3 1 .1 1.6-1.2 3-2.7 4.1-4.3.2-.3.2-.7-.1-1l-1.5-1.5c-.4-.4-.3-1.2.3-1.4l6.2-1.8c.1-.1.2-.1.3-.1s.2 0 .3.1l2.6 2.6c.1.1.1.2.1.3s0 .2-.1.3l-6.2 6.2c-.1.1-.2.1-.3.1s-.2 0-.3-.1l-2.6-2.6c-.1-.1-.1-.2-.1-.3s0-.2.1-.3l1.8-6.2c.2-.7 1-.8 1.4-.3l1.5 1.5c.3.3.3.7.1 1z"
+				/>
+			</svg>
 		</a>
 
-		<!-- Modal de Currículo -->
+		<!-- MODAL DE CURRÍCULO -->
 		<div
 			id="modal-curriculo"
-			class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+			class="modal hidden"
 		>
-			<div
-				class="bg-white rounded-lg shadow-lg max-w-md w-full relative p-8"
-			>
+			<div class="modal-content">
 				<button
 					id="modal-close"
-					class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl font-bold"
+					class="modal-close"
+					aria-label="Fechar modal"
 				>
 					&times;
 				</button>
 				<h2
 					id="modal-nome"
-					class="text-2xl font-bold text-center mb-2 text-[#2b4c99]"
+					class="modal-title"
 				></h2>
 				<p
 					id="modal-profissao"
-					class="text-center text-gray-600 text-sm mb-2"
+					class="modal-subtitle"
 				></p>
 				<p
 					id="modal-cro"
-					class="text-center text-gray-500 text-xs mb-4"
+					class="modal-cro"
 				></p>
 				<ul
 					id="modal-curriculo-list"
-					class="text-gray-700 text-sm list-disc list-inside space-y-2"
+					class="modal-list"
 				></ul>
 			</div>
 		</div>
@@ -419,6 +383,6 @@
 		<script src="assets/js/tratamentos.js"></script>
 		<script src="assets/js/galeria.js"></script>
 		<script src="assets/js/profissionais.js"></script>
-		<script src="assets/js/header.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>

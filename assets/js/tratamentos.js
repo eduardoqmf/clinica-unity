@@ -1,7 +1,7 @@
 // Função para carregar tratamentos
 async function carregarTratamentos() {
 	try {
-		const response = await fetch("assets/json/tratamentos.json");
+		const response = await fetch("assets/data/tratamentos.json");
 		const tratamentos = await response.json();
 
 		const wrapper = document.getElementById("tratamentos-wrapper");

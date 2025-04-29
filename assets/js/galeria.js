@@ -1,6 +1,6 @@
 async function carregarGaleria() {
 	try {
-		const response = await fetch("assets/json/galeria.json");
+		const response = await fetch("assets/data/galeria.json");
 		const fotos = await response.json();
 
 		const galeriaWrapper = document.getElementById("galeria-wrapper");

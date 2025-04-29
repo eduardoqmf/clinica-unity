@@ -23,7 +23,7 @@ const swiper = new Swiper(".profissionais-swiper", {
 // Função para carregar dentistas
 async function carregarDentistas() {
 	try {
-		const response = await fetch("assets/json/dentistas.json");
+		const response = await fetch("assets/data/dentistas.json");
 		const dentistas = await response.json();
 
 		const wrapper = document.getElementById("dentistas-wrapper");
@@ -34,7 +34,7 @@ async function carregarDentistas() {
 						.map(
 							([rede, url]) => `
               <a href="${url}" target="_blank">
-                <img src="assets/img/${rede}.png" alt="${rede}" class="w-4 h-4" />
+                <img src="assets/img/icones/${rede}.png" alt="${rede}" class="w-4 h-4" />
               </a>`
 						)
 						.join("")
@@ -119,3 +119,5 @@ function ativarModal() {
 
 // Chamar a função para carregar dentistas
 carregarDentistas();
+
+// TODO: verificar se tem como colocar os dentistas igual ao icone, para não ter que mudar varias vezes o caminho se precisar

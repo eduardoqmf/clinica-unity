@@ -1,0 +1,417 @@
+/* =========================
+    RESET / BASE
+========================= */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: #ffffff;
+	color: #333333;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.container {
+	width: 90%;
+	max-width: 1124px;
+	margin: 0 auto;
+}
+
+/* =========================
+	  HEADER
+  ========================= */
+.header {
+	background-color: #2b4c99;
+	color: white;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.logo img {
+	height: 60px;
+}
+
+.menu ul {
+	display: flex;
+	list-style: none;
+}
+
+.menu li {
+	margin-left: 30px;
+	text-transform: uppercase;
+}
+
+.menu li a {
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 16px;
+	position: relative;
+}
+
+.menu li a::after {
+	content: "";
+	width: 0;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	transition: width 0.3s;
+}
+
+.menu li a:hover::after,
+.menu li.active a::after {
+	width: 100%;
+}
+
+.menuopener {
+	display: none;
+}
+
+/* =========================
+	  HOME
+  ========================= */
+.home-section {
+	height: calc(100vh - 100px);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.home-content {
+	text-align: left;
+}
+
+.home-content h1 {
+	font-size: 72px;
+	color: #fff;
+	margin-bottom: 20px;
+	text-shadow: #555 0px 1px 2px;
+}
+
+.home-content h2 {
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 30px;
+	text-shadow: #555 0px 1px 2px;
+}
+
+.button {
+	display: inline-block;
+	background-color: #2b4c99;
+	color: white;
+	padding: 10px 24px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 500;
+	transition: background 0.3s;
+	margin-top: 5px;
+}
+
+.button:hover {
+	background-color: #0079c7;
+}
+
+.home-cards {
+	display: flex;
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.card-home {
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	height: 200px; /* ou a altura que você quiser para o card */
+	max-width: 320px; /* Limite de largura pra não esticar demais */
+	min-height: 200px; /* Garante altura igual */
+}
+
+.card-home-title {
+	flex: 0 0 auto; /* Ocupa só o espaço necessário */
+	text-align: center;
+}
+
+.card-home-title h3 {
+	font-size: 20px;
+	color: #2b4c99;
+}
+
+.card-home-content {
+	flex: 1; /* Ocupa o espaço restante */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.card-home-content p {
+	font-size: 14px;
+	color: #666;
+}
+
+.card-home-content .hours {
+	width: 100%;
+}
+
+.card-home-button {
+	flex: 0 0 auto;
+	text-align: center;
+}
+
+.semana,
+.sabado,
+.domingo {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 0px;
+}
+
+.semana,
+.sabado {
+	border-bottom: 1px solid #2b4c99;
+}
+
+/* =========================
+	  SECTIONS GERAIS
+  ========================= */
+
+section[id] {
+	scroll-margin-top: 100px; /* Compensa o header fixo */
+}
+.section-default {
+	padding: 80px 0;
+}
+
+.bg-gray {
+	background-color: #f7f7f7;
+}
+
+.bg-white {
+	background-color: #ffffff;
+}
+
+.bg-light {
+	background-color: #f7f7f7;
+}
+
+.section-title {
+	font-size: 32px;
+	text-align: center;
+	color: #2b4c99;
+	margin-bottom: 50px;
+}
+
+/* =========================
+	  GALERIA E TRATAMENTOS
+  ========================= */
+.gallery-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 20px;
+}
+
+.tratamentos-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+/* =========================
+	  CONTATO
+  ========================= */
+.contato-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	align-items: center;
+}
+
+.contato-mapa,
+.contato-info {
+	flex: 1;
+}
+
+.mapa-iframe {
+	border-radius: 8px;
+	width: 100%;
+	height: 300px;
+}
+
+.contato-info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.contato-clinica {
+	font-size: 24px;
+	color: #2b4c99;
+	margin-bottom: 20px;
+}
+
+.contato-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 14px;
+}
+
+.icone-contato {
+	width: 40px;
+	height: 40px;
+	background-color: #0079c7;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icone-contato img {
+	width: 20px;
+}
+
+/* =========================
+	  FOOTER
+  ========================= */
+.footer {
+	background-color: #2b4c99;
+	padding: 30px 0;
+	color: white;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.footer-social {
+	display: flex;
+	gap: 16px;
+}
+
+.footer-icon {
+	width: 40px;
+	height: 40px;
+	background-color: #0079c7;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.3s;
+}
+
+.footer-icon:hover {
+	background-color: #005999;
+}
+
+.footer-copy {
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+/* =========================
+	  WHATSAPP BUTTON
+  ========================= */
+.whatsapp-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #2b4c99;
+	padding: 12px;
+	border-radius: 50%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+	  MODAL CURRÍCULO
+  ========================= */
+.modal {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+.modal.hidden {
+	display: none !important;
+}
+.modal-content {
+	background: #fff;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+	width: 90%;
+	max-width: 500px;
+	position: relative;
+}
+.modal-close {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 28px;
+	color: #333;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.modal-title {
+	font-size: 24px;
+	color: #2b4c99;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.modal-subtitle,
+.modal-cro {
+	font-size: 14px;
+	color: #555;
+	text-align: center;
+}
+
+.modal-list {
+	margin-top: 20px;
+	list-style: disc inside;
+	color: #333;
+	font-size: 14px;
+}
