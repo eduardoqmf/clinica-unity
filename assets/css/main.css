@@ -350,7 +350,7 @@ section[id] {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-	background-color: #2b4c99;
+	background-color: #25d366; /* Verde padrão do WhatsApp */
 	padding: 12px;
 	border-radius: 50%;
 	color: white;
@@ -358,6 +358,11 @@ section[id] {
 	align-items: center;
 	justify-content: center;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	transition: background 0.3s ease;
+}
+
+.whatsapp-button:hover {
+	background-color: #128c7e; /* Verde mais escuro no hover */
 }
 
 /* =========================
