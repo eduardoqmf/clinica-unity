@@ -393,6 +393,13 @@ section[id] {
 /* =========================
 	  LOCALIZACAO E CONTATO
   ========================= */
+
+.localizacao-section {
+	height: auto;
+	padding: 80px 0;
+	margin-bottom: 100px; /* reserva espaço pro footer */
+}
+
 .contato-grid {
 	display: flex;
 	flex-wrap: wrap;
@@ -511,19 +518,17 @@ section[id] {
   ========================= */
 .whatsapp-button {
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	background-color: transparent;
+	bottom: 30px;
+	right: 40px;
+	background-color: rgb(64, 194, 81);
 	padding: 0;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	box-shadow: none;
-}
-
-.whatsapp-button:hover {
-	background-color: #128c7e;
+	height: 64px;
+	width: 64px;
 }
 
 /* =========================
