@@ -41,26 +41,40 @@ async function carregarDentistas() {
 				: "";
 
 			const slide = document.createElement("div");
-			slide.className =
-				"swiper-slide flex flex-col items-center text-center bg-gray-50 p-6 rounded-lg shadow-md";
+			slide.className = "swiper-slide";
 
 			slide.innerHTML = `
-          <img 
-            src="${d.imagem}" 
-            alt="${d.nome}" 
-            class="w-40 h-40 object-cover rounded-full mb-4 cursor-pointer"
-            data-nome="${d.nome}" 
-            data-profissao="${d.profissao}" 
-            data-cro="${d.cro}" 
-            data-curriculo='${JSON.stringify(d.curriculo || [])}'
-          />
-          <h3 class="text-xl font-semibold text-[#0079c7]">${d.nome}</h3>
-          <p class="text-gray-700 text-sm mt-2">${d.profissao}</p>
-          <p class="text-gray-500 text-xs mt-1">${d.cro}</p>
-          <div class="section-team--social">
-            ${socialIcons}
-          </div>
-        `;
+				  <div class="card-dentista">
+					<img 
+					  src="${d.imagem}" 
+					  alt="${d.nome}" 
+					  class="img-dentista"
+					  data-nome="${d.nome}" 
+					  data-profissao="${d.profissao}" 
+					  data-cro="${d.cro}" 
+					  data-curriculo='${JSON.stringify(d.curriculo || [])}'
+					/>
+					<h3 class="nome-dentista">${d.nome}</h3>
+					<p class="profissao-dentista">${d.profissao}</p>
+					<p class="cro-dentista">${d.cro}</p>
+					${
+						d.redes && Object.keys(d.redes).length > 0
+							? `
+					  <div class="redes-dentista">
+						${Object.entries(d.redes)
+							.map(
+								([rede, url]) => `
+							<a href="${url}" target="_blank" class="icone-rede">
+							  <img src="assets/img/icones/${rede}.png" alt="${rede}" />
+							</a>
+						  `
+							)
+							.join("")}
+					  </div>`
+							: ""
+					}
+				  </div>
+				`;
 
 			wrapper.appendChild(slide);
 		});
@@ -79,7 +93,7 @@ function ativarModal() {
 	const closeBtn = document.getElementById("modal-close");
 
 	// Clicou na imagem
-	document.querySelectorAll("#dentistas-wrapper img").forEach((img) => {
+	document.querySelectorAll(".img-dentista").forEach((img) => {
 		img.addEventListener("click", (e) => {
 			const nome = e.target.getAttribute("data-nome");
 			const profissao = e.target.getAttribute("data-profissao");
