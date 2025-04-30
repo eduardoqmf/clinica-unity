@@ -307,18 +307,79 @@ section[id] {
 }
 
 /* =========================
-	  GALERIA E TRATAMENTOS
+      GALERIA 
   ========================= */
 .gallery-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	gap: 20px;
 }
 
+.gallery-grid a {
+	display: block;
+	overflow: hidden;
+	border-radius: 8px;
+	transition: transform 0.3s, box-shadow 0.3s;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-grid a:hover {
+	transform: scale(1.03);
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-grid img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	transition: opacity 0.3s ease;
+}
+
+/* =========================
+      TRATAMENTOS
+  ========================= */
 .tratamentos-list {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 24px;
+}
+
+.tratamento-card {
+	background: #ffffff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 24px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.tratamento-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.tratamento-card.open .tratamento-conteudo {
+	height: auto;
+	opacity: 1;
+	margin-top: 12px;
+}
+
+.tratamento-titulo {
+	font-size: 18px;
+	font-weight: 600;
+	color: #2b4c99;
+	margin-bottom: 8px;
+}
+
+.tratamento-conteudo {
+	font-size: 14px;
+	color: #555;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: all 0.3s ease;
 }
 
 /* =========================
