@@ -11,9 +11,14 @@ async function carregarTratamentos() {
 			card.className = "tratamento-card";
 
 			card.innerHTML = `
-          <div class="tratamento-titulo">${tratamento.nome}</div>
-          <div class="tratamento-conteudo">${tratamento.descricao}</div>
-        `;
+				<div class="tratamento-card-content">
+					<div class="tratamento-header">
+						<div class="tratamento-titulo">${tratamento.nome}</div>
+						<div class="tratamento-icone"></div>
+					</div>
+					<div class="tratamento-conteudo">${tratamento.descricao}</div>
+				</div>
+			`;
 
 			// Evento para abrir/fechar o card
 			card.addEventListener("click", function () {

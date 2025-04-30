@@ -1,11 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
 	// === Menu mobile ===
 	const menuOpener = document.querySelector(".menuopener");
-	const menuList = document.querySelector(".menu nav ul");
+	const menuList = document.querySelector(".menu ul");
 
 	if (menuOpener && menuList) {
 		menuOpener.addEventListener("click", () => {
 			menuList.classList.toggle("active");
+		});
+		// Fecha o menu ao clicar em um link (útil para mobile)
+		document.querySelectorAll(".menu ul li a").forEach((link) => {
+			link.addEventListener("click", () => {
+				menuList.classList.remove("active");
+			});
 		});
 	}
 
