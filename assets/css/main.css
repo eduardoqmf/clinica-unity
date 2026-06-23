@@ -36,7 +36,7 @@ img {
 	color: white;
 	height: 100px;
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	position: sticky;
 	top: 0;
 	z-index: 100;
@@ -49,8 +49,21 @@ img {
 	width: 100%;
 }
 
+.logo {
+	align-self: stretch; /* ocupa toda a altura do header (faixa branca) */
+	display: flex;
+	align-items: center;
+	background-color: #ffffff;
+	padding: 0 24px;
+}
+
+.logo a {
+	display: flex;
+	align-items: center;
+}
+
 .logo img {
-	height: 60px;
+	height: 56px;
 }
 
 .menu ul {
@@ -145,7 +158,7 @@ section[id] {
 }
 
 .home-content h1 {
-	font-size: 72px;
+	font-size: clamp(36px, 8vw, 72px);
 	color: #fff;
 	margin-bottom: 20px;
 	text-shadow: #555 0px 1px 2px;
@@ -411,7 +424,7 @@ section[id] {
 .tratamento-conteudo {
 	font-size: 14px;
 	color: #555;
-	height: 0;
+	max-height: 0;
 	opacity: 0;
 	overflow: hidden;
 	transition: all 0.3s ease;
@@ -419,7 +432,7 @@ section[id] {
 }
 
 .tratamento-card.open .tratamento-conteudo {
-	height: auto;
+	max-height: 500px;
 	opacity: 1;
 	margin-top: 12px;
 }
@@ -574,17 +587,14 @@ section[id] {
 	position: fixed;
 	inset: 0;
 	background: rgba(0, 0, 0, 0.6);
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	z-index: 9999;
 }
-.modal.hidden {
-	display: none !important;
-}
 
 .modal.active {
-	display: flex !important;
+	display: flex;
 }
 
 .modal-content {
@@ -632,20 +642,20 @@ section[id] {
 	  AJUSTE DE VISIBILIDADE - RESPONSIVIDADE
   ========================= */
 
-@media (max-width: 375px) {
-	.logo img {
-		height: 48px;
+@media (max-width: 1024px) {
+	.header-container {
+		padding: 0 16px;
 	}
 
-	.tratamento-titulo {
-		font-size: 16px;
-	}
-}
-
-@media (max-width: 425px) {
 	.home-cards {
-		flex-direction: column;
-		align-items: center;
+		justify-content: center;
+		gap: 24px;
+		padding: 0 16px;
+	}
+
+	.nome-dentista {
+		max-width: 220px;
+		margin: 0 auto;
 	}
 }
 
@@ -711,20 +721,20 @@ section[id] {
 	}
 }
 
-@media (max-width: 1024px) {
-	.header-container {
-		padding: 0 16px;
-	}
-
+@media (max-width: 425px) {
 	.home-cards {
-		justify-content: center;
-		gap: 24px;
-		padding: 0 16px;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 375px) {
+	.logo img {
+		height: 48px;
 	}
 
-	.nome-dentista {
-		max-width: 220px;
-		margin: 0 auto;
+	.tratamento-titulo {
+		font-size: 16px;
 	}
 }
 

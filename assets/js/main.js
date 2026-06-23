@@ -15,19 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
-	// === Modal de Currículo ===
-	const modal = document.getElementById("modal-curriculo");
-	const closeBtn = document.getElementById("modal-close");
-
-	if (modal && closeBtn) {
-		closeBtn.addEventListener("click", () => {
-			modal.classList.add("hidden");
-			console.log("[Modal] Fechado com sucesso.");
-		});
-	} else {
-		console.warn("[Modal] Elementos não encontrados.");
-	}
-
 	// === Menu ativo ===
 	const navLinks = document.querySelectorAll(".menu ul li a");
 

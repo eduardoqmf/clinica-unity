@@ -29,24 +29,13 @@ async function carregarDentistas() {
 		const wrapper = document.getElementById("dentistas-wrapper");
 
 		dentistas.forEach((d) => {
-			const socialIcons = d.redes
-				? Object.entries(d.redes)
-						.map(
-							([rede, url]) => `
-              <a href="${url}" target="_blank">
-                <img src="assets/img/icones/${rede}.png" alt="${rede}" class="w-4 h-4" />
-              </a>`
-						)
-						.join("")
-				: "";
-
 			const slide = document.createElement("div");
 			slide.className = "swiper-slide";
 
 			slide.innerHTML = `
 				  <div class="card-dentista">
 					<img 
-					  src="${d.imagem}" 
+					  src="assets/img/dentistas/${d.imagem}"
 					  alt="${d.nome}" 
 					  class="img-dentista"
 					  data-nome="${d.nome}" 
@@ -133,5 +122,3 @@ function ativarModal() {
 
 // Chamar a função para carregar dentistas
 carregarDentistas();
-
-// TODO: verificar se tem como colocar os dentistas igual ao icone, para não ter que mudar varias vezes o caminho se precisar

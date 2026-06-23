@@ -3,7 +3,7 @@
 		"nome": "Dr. Clayton Luis da Silva",
 		"profissao": "Cirurgião-Dentista",
 		"cro": "CRO-SP 74918",
-		"imagem": "assets/img/dentistas/dr-clayton.jpg",
+		"imagem": "dr-clayton.jpg",
 		"curriculo": [
 			"Graduado pela PUC-Campinas em 2001",
 			"Especialista em Endodontia – ACDC em 2005",
@@ -21,7 +21,7 @@
 		"nome": "Dr. Fabrício Capato de Brito",
 		"profissao": "Ortodontista",
 		"cro": "CRO-SP 74928",
-		"imagem": "assets/img/dentistas/dr-fabricio.jpg",
+		"imagem": "dr-fabricio.jpg",
 		"curriculo": [
 			"Mestre em Implantodontia",
 			"Especialista em Prótese Dentária",
@@ -36,26 +36,10 @@
 		}
 	},
 	{
-		"nome": "Dra. Elena Portes Teixeira Will",
-		"profissao": "Implantodontista",
-		"cro": "CRO-SP 76446",
-		"imagem": "assets/img/dentistas/dra-elena.jpg",
-		"curriculo": [
-			"Especialista em Periodontia",
-			"Promoção de saúde",
-			"Membro da Associação Brasileira de Halitose",
-			"MBA em Gestão e Saúde"
-		],
-		"redes": {
-			"facebook": "https://facebook.com/draelena",
-			"linkedin": "https://linkedin.com/in/draelena"
-		}
-	},
-	{
 		"nome": "Dra. Alline Fray Falleiros",
 		"profissao": "Endodontista",
 		"cro": "CRO-SP 93337",
-		"imagem": "assets/img/dentistas/dra-alline.jpg",
+		"imagem": "dra-alline.jpg",
 		"curriculo": [
 			"Graduada pela faculdade São Leopoldo Mandic Campinas",
 			"Mestre em odontopediatria pela faculdade São Leopoldo Mandic Campinas",
@@ -68,18 +52,33 @@
 		"redes": {}
 	},
 	{
-		"nome": "Dra. Michelle Bueno Sobral",
-		"profissao": "Periodontista",
-		"cro": "CRO-SP 147254",
-		"imagem": "assets/img/dentistas/dra-michelle.jpg",
+		"nome": "Dra. Geórgia L. Cavalcante",
+		"profissao": "Clínica Geral | Protesista | Implantodontista",
+		"cro": "CRO-SP 80288",
+		"imagem": "dra-georgia.jpg",
 		"curriculo": [
-			"Graduada pela Faculdade São Leopoldo Mandic Campinas em 2021",
-			"Atualmente é mestranda em Clinica odontológica integrada",
-			"Está cursando a especialização de pacientes especiais na Faculdade São Leopoldo Madic"
+			"Graduado pela USF Universidade São Francisco - Bragança Paulista em 2001",
+			"Especialista em Prótese Dental – Associação dos Cirurgiões-dentistas de Campinas (ACDC)  em 2005",
+			"Especialista em Implante Dental - APCD Jundiaí em 2017",
+			"Cursando Residência em Harmonizacao Facial- Instituto Méstris Campinas"
+		],
+		"redes": {}
+	},
+	{
+		"nome": "Dra. Daniela Tresoldi Favoretto",
+		"profissao": "Endodontista",
+		"cro": "CRO-SP 92736",
+		"imagem": "dra-daniela.jpg",
+		"curriculo": [
+			"Graduada pela USP em 2003",
+			"Especialista Endodontia FFO - USP 2012",
+			"Intercâmbio University of London - Londres, Inglaterra - Setor odontopediatria",
+			"Organizou inúmeros projetos sociais na cidade de São Paulo para crianças.",
+			"Atendimento nas áreas de odontopediatria, endodontia e clínica geral."
 		],
 		"redes": {
-			"instagram": "https://instagram.com/dramichelle",
-			"facebook": "https://facebook.com/dramichelle"
+			"instagram": "https://instagram.com/dra-daniela",
+			"facebook": "https://facebook.com/dra-daniela"
 		}
 	}
 ]
