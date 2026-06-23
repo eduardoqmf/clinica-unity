@@ -12,9 +12,7 @@
 			"Atual vice-presidente da ACDC"
 		],
 		"redes": {
-			"facebook": "https://facebook.com/drclayton",
-			"instagram": "https://instagram.com/drclayton",
-			"linkedin": "https://linkedin.com/in/drclayton"
+			"instagram": "https://instagram.com/dr.claytonluisdasilva"
 		}
 	},
 	{
@@ -32,7 +30,7 @@
 			"Membro credenciado: Digital Smile Design (DSD)"
 		],
 		"redes": {
-			"instagram": "https://instagram.com/drfabricio"
+			"instagram": "https://www.instagram.com/dr.fabricio_brito"
 		}
 	},
 	{
@@ -49,7 +47,9 @@
 			"Ministra aulas nos cursos de mestrado e especialização de odontopediatria na faculdade São Leopoldo Mandic Campinas",
 			"Participou do banco de dentes humanos do Centro de Pesquisas Odontológicas da faculdade São Leopoldo Mandic Campinas"
 		],
-		"redes": {}
+		"redes": {
+			"instagram": "https://www.instagram.com/alline_fray_falleiros_dentista"
+		}
 	},
 	{
 		"nome": "Dra. Geórgia L. Cavalcante",
@@ -62,7 +62,9 @@
 			"Especialista em Implante Dental - APCD Jundiaí em 2017",
 			"Cursando Residência em Harmonizacao Facial- Instituto Méstris Campinas"
 		],
-		"redes": {}
+		"redes": {
+			"instagram": "https://www.instagram.com/odontogeorgia"
+		}
 	},
 	{
 		"nome": "Dra. Daniela Tresoldi Favoretto",
@@ -77,8 +79,7 @@
 			"Atendimento nas áreas de odontopediatria, endodontia e clínica geral."
 		],
 		"redes": {
-			"instagram": "https://instagram.com/dra-daniela",
-			"facebook": "https://facebook.com/dra-daniela"
+			"instagram": "https://www.instagram.com/dani_tresoldi"
 		}
 	}
 ]
