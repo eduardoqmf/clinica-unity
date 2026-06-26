@@ -139,6 +139,14 @@ section[id] {
 	margin-bottom: 50px;
 }
 
+.equipe-hint {
+	text-align: center;
+	color: #666;
+	font-size: 14px;
+	margin-top: -38px; /* aproxima do título (que tem 50px de margin-bottom) */
+	margin-bottom: 40px;
+}
+
 /* =========================
 	  HOME
   ========================= */
