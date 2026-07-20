@@ -81,5 +81,20 @@
 		"redes": {
 			"instagram": "https://www.instagram.com/dani_tresoldi"
 		}
+	},
+	{
+		"nome": "Dra. Mariana Milan Fabrini",
+		"profissao": "Ortodontia - Prótese - Implantes",
+		"cro": "CRO-SP 81796",
+		"imagem": "dra-mariana.jpg",
+		"curriculo": [
+			"Graduada pela Unesp- São José dos Campos- 2003",
+			"Atua na área de Ortodontia",
+			"Trabalha com Alinhadores ortodônticos Invisalign Doctor",
+			"Especialista em Prótese Dentária e Implantes"
+		],
+		"redes": {
+			"instagram": "https://www.instagram.com/dramarianafabrini"
+		}
 	}
 ]
